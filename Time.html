@@ -1,0 +1,23 @@
+<html>
+    <head>
+         <script>
+            var size = 10;
+            console.log(size);
+            function  showTime(){
+                document.getElementById('time').innerHTML = Date()
+            }
+            function changeSize()
+            {
+                size += 10;
+                document.getElementById('size').style.fontSize = ` ${size}px`;
+                
+            }
+        </script>
+    </head>
+    <body>
+         <p id="size"> Hi this Suraj Bhosale</p>
+         <input type="button" value="change size by 10px" onclick="changeSize()">
+         <input type="button" value="Click here" onclick="showTime()"></input><br> 
+         <div id="time"> </div>
+    </body>
+</html>
