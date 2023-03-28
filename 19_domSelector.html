@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Selector</title>
+  
+</head>
+<body>
+
+      <div id="intro">
+        <h2> HTML & JavaScript are crucial technologies</h2>
+        <p> The web would not work without them... </p>
+      </div>
+      <div id="list">
+        <ul>
+            <li>Flexible</li>
+            <li>Available</li>
+            <li>Magical</li>
+        </ul>
+      </div>
+      <script>
+     
+        console.log("----------------------------------------------------------------");
+        const mainHeading = document.querySelector("#intro");
+        const  h2 = mainHeading.getElementsByTagName("h2");
+        console.log(h2[0].innerHTML);
+        console.log("----------------------------------------------------------------");
+        const secondAdvantage = document.querySelectorAll("#list ul");
+        const ul=secondAdvantage[0];
+        console.log(ul.children[1].innerHTML);
+        console.log("----------------------------------------------------------------");
+        console.log(ul.innerHTML);
+
+        
+
+     
+  </script>
+</body>
+</html>
