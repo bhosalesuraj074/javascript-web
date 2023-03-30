@@ -29,10 +29,57 @@ console.log(elementMyProfile);
 
 console.log("====== Changing the CSS properties =====");
 const elementTechStack = document.querySelector("#techStack");
-elementTechStack.style.color = "red";
-elementTechStack.style.fontFamily = "Courier New', Courier, monospace";
+//elementTechStack.style.color = "red";
+//elementTechStack.style.fontFamily = "Courier New', Courier, monospace";
 
 console.log("====== Remove Element =====");
 const elementDivProject = document.querySelector("#divProject");
 const elementProject = document.querySelector("#project");
 elementDivProject.removeChild(elementProject);
+
+console.log("====== Adding Element =====");
+const elementDiv = document.querySelector("#divProject");
+const elementP = document.createElement("p");
+const elementText = document.createTextNode("Team Size - 7");
+elementP.appendChild(elementText);
+elementDiv.appendChild(elementP);
+
+// function show()
+// {
+//     console.log("click Event ");
+// }
+
+const clickEvent=document.querySelector("#address");
+//clickEvent.addEventListener("click",()=>
+
+//clickEvent.addEventListener("dblclick",()=>
+clickEvent.addEventListener("mouseover",()=>
+{
+    console.log("Click Event ...");
+});
+
+const num = document.querySelector("#isEven")
+num.addEventListener("click",()=>
+{
+    const a=prompt("Enter the number");
+    if(a % 2=== 0)
+    {
+        alert("Number is even");
+    }
+    else{
+        alert("Number is odd");
+    }
+})
+
+
+// document.addEventListener('mouseup', () => {
+//     // get the selected text
+//     const selectedText = window.getSelection().toString().trim();
+    
+//     // if there is selected text, print it to the console
+//     if (selectedText.length > 0) {
+//       console.log(`Selected text: "${selectedText}"`);
+//     }
+//   });
+
+
