@@ -82,4 +82,4 @@ num.addEventListener("click",()=>
 //     }
 //   });
 
-
+console.log();
